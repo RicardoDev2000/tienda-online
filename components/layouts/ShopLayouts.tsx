@@ -1,7 +1,10 @@
 import Head from "next/head"
 import { FC, ReactNode } from "react";
+<<<<<<< HEAD
 import { Navbar, SideMenu } from "../ui";
 
+=======
+>>>>>>> 5f56bcb (¨mi.primera.tienda¨)
 
 interface Props {
   title: string;
@@ -22,6 +25,7 @@ export const ShopLayouts: FC<Props> = ({ children,title, pageDescription, imageF
       { imageFullURL &&( 
         <meta name="og:image" content={imageFullURL}/>
       )}
+<<<<<<< HEAD
        </Head>
 
 
@@ -30,6 +34,16 @@ export const ShopLayouts: FC<Props> = ({ children,title, pageDescription, imageF
        </nav>
        
         <SideMenu/>
+=======
+      
+
+       </Head>
+
+       <nav>
+        {/* TODO:navbar */}
+       </nav>
+
+>>>>>>> 5f56bcb (¨mi.primera.tienda¨)
 
        {/* Main */}
         <main style={{
