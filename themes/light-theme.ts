@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import { red,  } from '@mui/material/colors';
 
 
 export const lightTheme = createTheme({
@@ -34,11 +33,7 @@ export const lightTheme = createTheme({
     MuiTypography: {
       styleOverrides: {
         h1: {
-<<<<<<< HEAD
           fontSize: 40,
-=======
-          fontSize: 30,
->>>>>>> 5f56bcb (¨mi.primera.tienda¨)
           fontWeight: 600
         },
         h2: {
@@ -54,32 +49,21 @@ export const lightTheme = createTheme({
 
 
     MuiButton: {
-<<<<<<< HEAD
       defaultProps: {        
-=======
-      defaultProps: {
->>>>>>> 5f56bcb (¨mi.primera.tienda¨)
         variant: 'contained',
         size: 'small',
         disableElevation: true,
       },
       styleOverrides: {
         root: {
-<<<<<<< HEAD
           fontSize:16,
           backgroundColor:'white',
           color:'black',
-=======
->>>>>>> 5f56bcb (¨mi.primera.tienda¨)
           textTransform: 'none',
           boxShadow: 'none',
           borderRadius: 10,
           ":hover": {
-<<<<<<< HEAD
             backgroundColor: 'rgba(0,0,0,0.2)',
-=======
-            backgroundColor: 'rgba(0,0,0,0.05)',
->>>>>>> 5f56bcb (¨mi.primera.tienda¨)
             transition: 'all 0.3s ease-in-out'
           }
         }
