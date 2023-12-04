@@ -10,15 +10,15 @@ export const Navbar = () => {
     <AppBar position="fixed" color="primary">
       
       <Toolbar>
-          
+       
             <Link href='/' display='flex' alignItems='center'>
-             <Typography variant="h6">Teslo | </Typography>
-             <Typography sx={{ml:0.5}}>Shop</Typography>
+             <Typography variant="h1">Teslo | </Typography>
+             <Typography variant='subtitle1' sx={{ml:0.5}}>Shop</Typography>
             </Link>
 
             {/*todo:Flex */}
                  <Box flex={1} />
-                <Box sx={  {display:{xs:'none', sm:'block'}} }>
+                <Box sx={  {display:{xs:'none', sm:'block'}}  }>
                     <Link href='/categoria/women'><Button>Hombres</Button></Link>  
                     <Link href='/categoria/men'><Button>Mujeres</Button></Link>  
                     <Link href='/categoria/kids'><Button>Niños</Button></Link>  
@@ -31,15 +31,14 @@ export const Navbar = () => {
 
                   
                   <Link href='/cart'>
-                  <IconButton>
+                        <IconButton>
+                          
+                          <Badge badgeContent={2} color="secondary">
 
-                    {/**No me corre el Badge */}
-                    {/*<Badge badgeContent={2} color="secondary">*/}
+                            <ShoppingCartOutlined/>
 
-                      <ShoppingCartOutlined/>
-
-                    {/*</Badge>*/}                   
-                  </IconButton>
+                          </Badge>
+                        </IconButton>
                   </Link>
 
                   <Button>

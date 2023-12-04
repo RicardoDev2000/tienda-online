@@ -34,7 +34,7 @@ export const lightTheme = createTheme({
     MuiTypography: {
       styleOverrides: {
         h1: {
-          fontSize: 30,
+          fontSize: 40,
           fontWeight: 600
         },
         h2: {
@@ -50,14 +50,14 @@ export const lightTheme = createTheme({
 
 
     MuiButton: {
-      defaultProps: {
-        
+      defaultProps: {        
         variant: 'contained',
         size: 'small',
         disableElevation: true,
       },
       styleOverrides: {
         root: {
+          fontSize:16,
           backgroundColor:'white',
           color:'black',
           textTransform: 'none',
