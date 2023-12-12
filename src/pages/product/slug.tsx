@@ -1,6 +1,8 @@
 import { Box, Button, Chip, Grid, Typography } from "@mui/material"
 import { ShopLayouts } from "../../../components/layouts"
 import { initialData } from "../../../database/products"
+import { ProductSlide } from "../../../components/products"
+
 
 const product=initialData.products[0]
 
@@ -12,7 +14,9 @@ export const ProductPage = () => {
 
 
               <Grid item xs={12} sm={7}>
-                {/* SideShow */}
+                <ProductSlide 
+                images={product.images}
+                />
               </Grid>
 
               <Grid item xs={12} sm={5}>
