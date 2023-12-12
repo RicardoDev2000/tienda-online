@@ -1,7 +1,7 @@
-import { Box, Card, CardActionArea, CardMedia, Grid, Typography } from "@mui/material"
+import { Box, Card, CardActionArea, CardMedia, Grid, Link, Typography } from "@mui/material"
 import { IProduct } from "../../interfaces"
 import { FC, useMemo, useState } from "react";
-import Link from "next/link";
+
 
 interface Props{
     product:IProduct;
@@ -24,11 +24,8 @@ export const ProductCard:FC<Props> = ({product}) => {
     <Grid item xs={6} sm={4} 
     onMouseEnter={()=>setIsHovered(true)}
     onMouseLeave={()=>setIsHovered(false)}
-     >
-      
-          {'Me quede aqui, revisar la importacion de Link'}
-
-        <Link href='/product/slug' passHref prefetch={false}>
+     >      
+        <Link href="/product/slug" >
             <Card>
                  <CardActionArea>
                    <CardMedia
@@ -36,7 +33,6 @@ export const ProductCard:FC<Props> = ({product}) => {
                    image={productImage}
                    alt={product.title}
                    className='fideIn'
-                   onLoad={()=>console.log('cargo')}  
                    />
                  </CardActionArea>
               </Card>           
