@@ -24,26 +24,25 @@ export const ProductPage = () => {
                   <Box display='flex' flexDirection='column'>
                       <Typography content='h1' variant='h1'>{product.title}</Typography>
                      <Typography content='subtitle1' variant='h2' fontWeight='800'>${product.price}</Typography>
-                
-                
                       <Box sx={{my:2}}>
                             <Typography variant='subtitle2'>Cantidad</Typography>
                             <ItemCounter contador={0}/>
-                            <SizeSelector sizes={product.sizes} selectedSize={product.sizes[0]} />
+                            <SizeSelector sizes={product.sizes} selectedSize={product.sizes[2]} />
                       </Box>
-
-                      <Button color="secondary" className='circular-btn'>
+                      
+                      <Button color="secondary" sx={{
+                  '&:hover': {
+                    backgroundColor:'#274494' 
+                  },
+                   }} >
                         Agregar al carrito
                       </Button>
 
                       {/*<Chip label='No hay productos' color='error' variant='outlined' />*/}
-
                       <Box sx={{mt:3}}>
                           <Typography fontWeight='900' variant="subtitle2">Descripción</Typography>
                           <Typography variant="body2">{product.description}</Typography>
-
                       </Box>
-
                   </Box>
               </Grid>        
       </Grid>
