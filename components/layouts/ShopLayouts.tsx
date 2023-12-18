@@ -28,7 +28,7 @@ export const ShopLayouts: FC<Props> = ({ children,title, pageDescription, imageF
        <nav>
         <Navbar/>
        </nav>
-       
+
         <SideMenu/>
 
        {/* Main */}
@@ -42,7 +42,7 @@ export const ShopLayouts: FC<Props> = ({ children,title, pageDescription, imageF
 
         {/*FOOTER*/}
         <footer>
-            {/*Todo:FOOTER */}
+            {/*TODO:FOOTER */}
         </footer>
         
     </>

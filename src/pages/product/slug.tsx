@@ -27,13 +27,13 @@ export const ProductPage = () => {
                       <Box sx={{my:2}}>
                             <Typography variant='subtitle2'>Cantidad</Typography>
                             <ItemCounter contador={0}/>
-                            <SizeSelector sizes={product.sizes} selectedSize={product.sizes[2]} />
+                            <SizeSelector sizes={product.sizes} selectedSize={product.sizes[4]} />
                       </Box>
                       
                       <Button color="secondary" sx={{
                   '&:hover': {
                     backgroundColor:'#274494' 
-                  },
+                  }
                    }} >
                         Agregar al carrito
                       </Button>

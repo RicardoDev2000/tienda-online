@@ -12,7 +12,7 @@ const Custom404 = () => {
         sx={ {  flexDirection:{xs:'column',sm:'row'}  } }> 
 
             <Typography variant='h1' component='h1' fontSize={80} fontWeight={200} >404 |</Typography>
-            <Typography marginLeft='0'  >No encontramos su búsqueda</Typography>
+            <Typography marginLeft='0' >No encontramos su búsqueda</Typography>
         </Box>
     </ShopLayouts>
   )
