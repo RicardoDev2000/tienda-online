@@ -1,7 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 export const lightTheme = createTheme({
   palette: {
-    mode: 'light',
     primary: {
       main: '#1E1E1E'
     },
@@ -9,7 +8,10 @@ export const lightTheme = createTheme({
       main: '#3A64D8'
     },
     info:{
-      main:'#fff'
+      main:'#cea405'
+    },
+    background:{
+     default:'#e2b507' 
     }
   },
   components: {
@@ -25,12 +27,11 @@ export const lightTheme = createTheme({
       },
       styleOverrides: {
         root: {
-          backgroundColor: 'white',
+          backgroundColor: '#cea405',
           height: 60
         },
       }
     },
-
     MuiTypography: {
       styleOverrides: {
         h1: {

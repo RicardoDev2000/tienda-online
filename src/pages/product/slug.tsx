@@ -30,7 +30,7 @@ export const ProductPage = () => {
                             <SizeSelector sizes={product.sizes} selectedSize={product.sizes[4]} />
                       </Box>
                       
-                      <Button color="secondary" sx={{
+                      <Button className="circular-btn" color="secondary" sx={{
                   '&:hover': {
                     backgroundColor:'#274494' 
                   }

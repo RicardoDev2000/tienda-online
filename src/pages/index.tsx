@@ -7,7 +7,7 @@ import { ProductList } from '../../components/products';
 
 export default function Home() {
   return (
-    <ShopLayouts title={'Tesla-Shop'} pageDescription={'Encuentra los mejores productos de tesla shop'}>
+    <ShopLayouts title={'Teslo-Shop'} pageDescription={'Encuentra los mejores productos de teslo shop'}>
         <Typography variant='h1' component='h1'>Tienda</Typography>       
         <Typography variant='h2' sx={{mb:1}}>Todos los productos</Typography> 
 

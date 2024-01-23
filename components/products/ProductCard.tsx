@@ -21,9 +21,10 @@ export const ProductCard:FC<Props> = ({product}) => {
 
 
   return (
-    <Grid item xs={6} sm={4} 
+    <Grid item xs={6} sm={3} 
     onMouseEnter={()=>setIsHovered(true)}
     onMouseLeave={()=>setIsHovered(false)}
+    display='flex' flexDirection={'column'}    
      >      
         <Link href="/product/slug" >
             <Card>
@@ -37,10 +38,18 @@ export const ProductCard:FC<Props> = ({product}) => {
                  </CardActionArea>
               </Card>           
         </Link>
-
-          <Box sx={{mt:1}} className='fideIn'>         
-          <Typography fontWeight={700}>{product.title}</Typography>
-          <Typography fontWeight={500}>${product.price}</Typography>
-          </Box>
+        
+          <Grid style={{flexGrow:1}} display={'flex'} flexDirection={'column'} justifyContent={'space-between'} > 
+              <Grid>
+                  <Box  className='fideIn'>
+                  <Typography fontWeight={700}>{product.title}</Typography>
+                  </Box>
+              </Grid>  
+              <Grid>
+                <Box  className='fideIn'>
+                <Typography fontWeight={500}>${product.price}</Typography>
+                </Box>
+              </Grid>  
+          </Grid>
     </Grid> 
 )}
