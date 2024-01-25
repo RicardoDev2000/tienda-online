@@ -25,7 +25,7 @@ export const Navbar = () => {
             {/*todo:Flex */}
 
             <Box flex={1} />
-                     <Grid style={{backgroundColor:'#cea405'}} height='10px'>
+                     <Grid style={{backgroundColor:'#cea405'}}>
 
                        <TextField  sx={{width:'150px'}}  label="Buscar" variant="filled"  style={{backgroundColor:'white', borderRadius:'40px'}}
                               InputProps={
