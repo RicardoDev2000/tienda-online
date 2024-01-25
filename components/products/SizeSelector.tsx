@@ -13,7 +13,7 @@ export const SizeSelector:FC<Props> = ({sizes, selectedSize}) => {
           {
             sizes.map(size=>(
               <Button size='small' key={size} color={selectedSize == size ? 'primary' : 'info'} 
-                sx={{
+                sx={{ml:1,
                   '&:hover': {
                    color: selectedSize == size ?  '#1E1E1E' : 'inherit'
                   },

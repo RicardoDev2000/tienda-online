@@ -2,7 +2,7 @@ import Toolbar from '@mui/material/Toolbar'
 import AppBar from '@mui/material/AppBar'
 import Typography from '@mui/material/Typography'
 import { MenuSharp, SearchOutlined, ShoppingCartOutlined} from '@mui/icons-material'
-import { Badge, Box, Button, Grid, IconButton, Link, Tooltip } from '@mui/material'
+import { Badge, Box, Button, Grid, IconButton, Link, TextField, Tooltip } from '@mui/material'
 
 
 
@@ -23,6 +23,24 @@ export const Navbar = () => {
             </Link>
 
             {/*todo:Flex */}
+
+            <Box flex={1} />
+                     <Grid style={{backgroundColor:'#cea405'}} height='10px'>
+
+                       <TextField  sx={{width:'150px'}}  label="Buscar" variant="filled"  style={{backgroundColor:'white', borderRadius:'40px'}}
+                              InputProps={
+                                {
+                                  endAdornment:(
+                                    <IconButton>                   
+                                     <SearchOutlined/>
+                                   </IconButton>
+                                  )
+                                }
+                              }
+                              >
+                        </TextField>
+                     </Grid>
+                      
                      <Box flex={1} />
                       <Box sx={{display:{xs:'none', sm:'block'},mr: 1}  }>
                           <Link href='/categoria/women'><Button>Hombres</Button></Link>  
@@ -30,12 +48,10 @@ export const Navbar = () => {
                           <Link href='/categoria/kids'><Button>Niños</Button></Link>                         
                       </Box>
 
-                    
-                <Tooltip title='Buscar'>
-                  <IconButton>                   
-                    <SearchOutlined/>
-                  </IconButton>
-                </Tooltip>   
+
+                     
+                      
+                      
 
                   <Link href='/cart'>
                     <Tooltip title='Carrito'>
